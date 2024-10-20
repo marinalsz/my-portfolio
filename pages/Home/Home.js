@@ -6,8 +6,10 @@ export const Home = () => {
   cleanPage(main);
   main.innerHTML = `
     <section class="home">
-    <h1>Marina López</h1>
-    <p>I'm a full stack developer student based in Huelva, Spain.</p>
-    <a href="mailto:peterparker@gmail.com">Say hi →</a>
+      <article>
+        <h2>Tech Times: Meet the Developer Behind the Code</h2>
+        <img src="/computer.png" alt="Computer">
+        <p>Behind every great website is a creative mind and meticulous attention to detail. That's where I come in—a web developer with a passion for crafting beautiful, functional, and user-centered designs. From front-end elegance to back-end robustness, I bring a blend of technical skill and design thinking to every project. Whether it's a sleek landing page or a complex e-commerce platform, I ensure the end result not only works but also wows.</p>
+      </article>
     </section>`;
 };

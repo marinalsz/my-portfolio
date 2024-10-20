@@ -1,17 +1,17 @@
-@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap");
 
 :root {
-  --periwinkle: #DAC4F7;
+  --periwinkle: #dac4f7;
   --oxford: #101935;
-  --platinum: #DAE2DF;
-  --purpureus: #9055A2;
+  --platinum: #dae2df;
+  --purpureus: #9055a2;
   --primary-dark: #feefdd;
   --bg-dark: #201e1f;
   --primary-light: #201e1f;
   --bg-light: #feefdd;
   --highlight: #ff4000;
   --divider: #b744b8;
-  --gunmetal: #2D3142;
+  --gunmetal: #2d3142;
 }
 
 * {
@@ -62,6 +62,11 @@ body::-webkit-scrollbar-thumb {
 
 main {
   min-height: 80vh;
+}
+
+h1,
+h2 {
+  text-transform: uppercase;
 }
 
 a,

@@ -5,7 +5,7 @@ nav {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  border: 2px solid coral;
+  border: 2px solid black;
 }
 
 @media (max-width: 770px) {
@@ -14,26 +14,49 @@ nav {
   }
 }
 
+h1{
+  text-transform: uppercase;
+  font-size: 3em;
+  font-weight: 700;
+  letter-spacing: 0.5rem;
+}
+
 .top-nav {
   width: 100%;
-  height: 50%;
+  height: 70%;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border-bottom: 2px solid coral;
+  border-bottom: 2px solid black;
 }
 
-.top-nav > img{
-  border: 2px solid seagreen;
+.top-nav > img {
   width: 25%;
   height: 100%;
   object-fit: cover;
+  border-right: 2px solid black;
 }
 
-.title{
+.title {
   width: 50%;
   height: 100%;
-  border: 2px solid blue;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px;
+  gap: 10px;
+  border-right: 2px solid black;
+}
+
+.title > p{
+  text-transform: uppercase;
+  font-size: 1.5em;
+}
+
+.forecast {
+  width: 25%;
+  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -41,30 +64,30 @@ nav {
   gap: 10px;
 }
 
-nav > div > button{
-  border: 2px solid khaki;
-  width: 25%;
-  height: 100%;
-  color: inherit;
-  background-color: transparent;
+.forecast > button {
+  width: 50px;
+  height: 50px;
 }
 
 nav > ul {
   width: 100%;
-  height: 50%;
+  height: 30%;
   display: flex;
   justify-content: space-between;
   align-items: center;
   text-transform: uppercase;
 }
 
-nav > ul > li{
-  border: 2px solid rebeccapurple;
+nav > ul > li {
   width: 25%;
   height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+li:nth-child(-n + 3) {
+  border-right: 2px solid black;
 }
 
 nav a {

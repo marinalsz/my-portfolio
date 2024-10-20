@@ -8,7 +8,6 @@ import { Home } from "./pages/Home/Home";
 import { Projects } from "./pages/Projects/Projects";
 import { About } from "./pages/About/About";
 import { Contact } from "./pages/Contact/Contact";
-import { Divider } from "./components/Divider/Divider";
 
 const header = document.querySelector("header");
 header.innerHTML = Navbar();
@@ -25,5 +24,3 @@ Home();
 changeTheme();
 
 getDate();
-
-footer.insertAdjacentHTML("beforebegin", Divider());

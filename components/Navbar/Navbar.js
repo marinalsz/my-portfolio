@@ -10,10 +10,13 @@ export const changeTheme = () => {
 
 export const changeText = () => {
   const themeBtn = document.querySelector("#themeBtn");
-  if (themeBtn.innerText === "Forecast ⛈") {
-    themeBtn.innerText = "Forecast ☀";
+  const forecastP = document.querySelector("#weather");
+  if (themeBtn.innerText === "☾") {
+    themeBtn.innerText = "☼";
+    forecastP.innerText = "Sunny Tomorrow";
   } else {
-    themeBtn.innerText = "Forecast ⛈";
+    themeBtn.innerText = "☾";
+    forecastP.innerText = "New Moon Tomorrow";
   }
 };
 
@@ -26,14 +29,18 @@ export const getDate = () => {
 
 export const Navbar = () => `
 <nav>
-  <div class = "top-nav">
-    <img src="https://images.vexels.com/content/238177/preview/compass-directions-filled-stroke-11a6ad.png" alt="Compass logo">
-    <div class = "title">
+  <div class="top-nav">
+    <img src="https://images.vexels.com/content/238177/preview/compass-directions-filled-stroke-11a6ad.png" alt="Logo">
+    <div class="title">
       <p id="dateP"></p>
       <h1>Marina López</h1>
       <p>Full Stack Developer Student</p>
     </div>
-    <button id="themeBtn">Forecast ⛈</button>
+    <div class="forecast">
+      <h2>Weather forecast</h2>
+      <p id = "weather">New Moon Tomorrow</p>
+      <button id="themeBtn">☾</button>
+    </div>
   </div>
   <ul>
     <li>
