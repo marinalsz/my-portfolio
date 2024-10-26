@@ -30,11 +30,11 @@ export const getDate = () => {
 export const Navbar = () => `
 <nav>
   <div class="top-nav">
-    <img src="https://images.vexels.com/content/238177/preview/compass-directions-filled-stroke-11a6ad.png" alt="Logo">
+    <img src="/logo.png" alt="Logo">
     <div class="title">
       <p id="dateP"></p>
       <h1>Marina López</h1>
-      <p>Full Stack Developer Student</p>
+      <p>Full Stack Developer</p>
     </div>
     <div class="forecast">
       <h2>Weather forecast</h2>

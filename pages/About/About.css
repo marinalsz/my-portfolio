@@ -4,12 +4,6 @@
     border-right: 2px solid black;
   }
   
-  @media (max-width: 770px) {
-    .about {
-      padding: 0 2rem;
-    }
-  }
-  
   .articles-container {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));

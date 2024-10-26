@@ -12,6 +12,7 @@
   --highlight: #ff4000;
   --divider: #b744b8;
   --gunmetal: #2d3142;
+  --spacing: 1rem;
 }
 
 * {
@@ -65,8 +66,9 @@ main {
 }
 
 h1,
-h2 {
+h2, h3 {
   text-transform: uppercase;
+  text-align: center;
 }
 
 a,
