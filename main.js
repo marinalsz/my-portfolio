@@ -23,4 +23,6 @@ Home();
 
 changeTheme();
 
+document.body.classList.add("light");
+
 getDate();

@@ -9,10 +9,16 @@ nav {
 }
 
 h1{
+  border: 2px solid red;
+  width: 100%;
+  height: 50%;
   text-transform: uppercase;
-  font-size: 3em;
+  font-size: 2.5rem;
   font-weight: 700;
-  letter-spacing: 0.5rem;
+  letter-spacing: 0.3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .top-nav {
@@ -46,11 +52,15 @@ h1{
 }
 
 .title > p{
+  border: 2px solid rgb(20, 250, 81);
+  width: 100%;
+  height: 25%;
   text-transform: uppercase;
-  font-size: 1.5em;
+  font-size: 1.5rem;
 }
 
 .forecast {
+  border: 2px solid darkblue;
   width: 25%;
   height: 100%;
   display: flex;
@@ -62,10 +72,19 @@ h1{
 }
 
 .forecast > button {
-  width: 50px;
-  height: 50px;
+  border: 2px solid rgb(42, 44, 72);
   color: inherit;
-  background-color: transparent;
+  background: none;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#themeImg{
+  border: 2px solid red;
+  width: 60%;
+  height: auto;
 }
 
 nav > ul {

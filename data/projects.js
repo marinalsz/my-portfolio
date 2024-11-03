@@ -2,7 +2,7 @@ export const projects = [
   {
     title: "FC Barcelona - Tienda",
     description: "A version of the FC Barcelona store.",
-    image: "/cover.png",
+    image: "/barcelona-thumbnail.png",
     tech: ["HTML5", "CSS3", "JavaScript"],
     github: "https://github.com/marinalsz/practica_dom.git",
     link: "https://fc-barcelona-tienda.vercel.app/",
@@ -18,7 +18,7 @@ export const projects = [
   {
     title: "NBA - Grid",
     description: "Esta es la descripción de mi segundo proyecto",
-    image: "/cover.png",
+    image: "/nba-thumbnail.png",
     tech: ["HTML5", "CSS3"],
     github: "https://github.com/marinalsz/entrega_grid.git",
     link: "https://nba-grid.vercel.app/",
