@@ -39,7 +39,7 @@ export const Navbar = () => `
       <p>Full Stack Developer</p>
     </div>
     <div class="forecast">
-      <h2>Weather forecast</h2>
+      <p>Weather forecast</p>
       <p id = "weather">New Moon Tomorrow</p>
       <button id="themeBtn">
         <img src="/moon.png" alt="Moon drawing" id="themeImg">

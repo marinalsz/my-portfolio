@@ -14,6 +14,9 @@ export const Home = () => {
             <h3>I'm Marina</h3>
             <span>she/her · /məˈɹiːnə/</span>
             <p>A vocational training and a Master's degree student in <strong>Full Stack Development</strong> based in southern Spain.</p>
+            <a href="mailto:marinalsz.dev@gmail.com">Mail</a>
+            <a href="https://github.com/marinalsz" target="_blank" rel="noopener">Github</a>
+            <a href="https://linkedin.com/in/marinalsz" target="_blank" rel="noopener">LinkedIn</a>
           </div>
         </div>
       </article>

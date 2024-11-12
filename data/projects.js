@@ -10,7 +10,7 @@ export const projects = [
   {
     title: "Dua Lipa - Store",
     description: "A version of the Dua Lipa store.",
-    image: "/dua-lipa-thumbnail.png",
+    image: "/dua-lipa-thumbnail.svg",
     tech: ["HTML5", "CSS3"],
     github: "https://github.com/marinalsz/entrega_proyecto1.git",
     link: "https://dua-lipa-store.vercel.app/",
