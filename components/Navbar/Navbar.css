@@ -5,19 +5,9 @@ nav {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  border: 2px solid black;
-}
-
-h1{
-  width: 100%;
-  height: 50%;
-  text-transform: uppercase;
-  font-size: 2.5rem;
-  font-weight: 700;
-  letter-spacing: 0.3rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  border-top: var(--border);
+  border-left: var(--border);
+  border-right: var(--border);
 }
 
 .top-nav {
@@ -26,15 +16,14 @@ h1{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border-bottom: 2px solid black;
+  border-bottom: var(--border);
 }
 
 .top-nav > img {
   width: 25%;
   height: 100%;
   object-fit: cover;
-  padding: 20px;
-  border-right: 2px solid black;
+  border-right: var(--border);
 }
 
 .title {
@@ -45,19 +34,22 @@ h1{
   justify-content: space-around;
   align-items: center;
   text-align: center;
-  padding: 10px;
-  gap: 10px;
-  border-right: 2px solid black;
+  padding: var(--spacing);
+  border-right: var(--border);
 }
 
-.title > p{
+.title > p {
   width: 100%;
   height: 25%;
   text-transform: uppercase;
-  font-size: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
 }
 
 .forecast {
+  background-color: azure;
   width: 25%;
   height: 100%;
   display: flex;
@@ -65,21 +57,31 @@ h1{
   justify-content: center;
   align-items: center;
   text-align: center;
-  gap: 10px;
+}
+
+.forecast p{
+  background-color: blueviolet;
+  width: 100%;
+  height: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .forecast > button {
-  border: 2px solid rgb(42, 44, 72);
+  width: 100%;
+  height: 50%;
   color: inherit;
   background: none;
   border: none;
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: aquamarine;
 }
 
-#themeImg{
-  width: 60%;
+#themeImg {
+  width: 50%;
   height: auto;
 }
 
@@ -93,22 +95,13 @@ nav > ul {
 }
 
 nav > ul > li {
-  width: 25%;
+  width: 50%;
   height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-li:nth-child(-n + 3) {
-  border-right: 2px solid black;
-}
-
-nav a {
-  transition: all 0.3s ease-in-out;
-}
-
-nav a:hover {
-  color: var(--highlight);
-  font-weight: bold;
+nav > ul > li:nth-child(-n + 1) {
+  border-right: var(--border);
 }

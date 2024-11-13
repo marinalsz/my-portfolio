@@ -1,18 +1,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap");
 
 :root {
-  --periwinkle: #dac4f7;
-  --oxford: #101935;
   --platinum: #dae2df;
-  --purpureus: #9055a2;
   --primary-dark: #feefdd;
   --bg-dark: #201e1f;
-  --primary-light: #201e1f;
   --bg-light: #feefdd;
   --highlight: #ff4000;
-  --divider: #b744b8;
   --gunmetal: #2d3142;
   --spacing: 1rem;
+  --border: 2px solid black;
 }
 
 * {
@@ -20,19 +16,6 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Space Grotesk", sans-serif;
-}
-
-li {
-  list-style-type: none;
-}
-
-a {
-  text-decoration: none;
-  color: inherit;
-}
-
-html {
-  scroll-behavior: smooth;
 }
 
 body.light {
@@ -64,17 +47,39 @@ body::-webkit-scrollbar-thumb {
   background-color: var(--highlight);
 }
 
-main {
-  min-height: 80vh;
-}
-
 h1,
-h2, h3 {
+h2,
+h3 {
   text-transform: uppercase;
   text-align: center;
+  letter-spacing: 0.2rem;
 }
 
-a,
-p {
-  font-size: 1.1rem;
+h1 {
+  width: 100%;
+  height: 50%;
+  font-size: 4em;
+  font-weight: 700;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+ul, li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  transition: all 0.3s ease-in-out;
+}
+
+a:hover {
+  color: var(--highlight);
+  font-weight: bold;
+}
+
+main {
+  min-height: 80vh;
 }
