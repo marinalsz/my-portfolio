@@ -15,16 +15,26 @@ export const changeText = () => {
   const forecastP = document.querySelector("#weather");
   if (document.body.classList.contains("light")) {
     themeImg.src = "/moon.png";
-    forecastP.innerText = "New Moon Tomorrow";
+    themeImg.style.filter = "none";
+    forecastP.innerText =
+      "With the new moon, expect especially dark skies perfect for stargazing. Cool, calm, and crisp conditions will prevail—bundle up if heading out!";
   } else {
     themeImg.src = "/sun.png";
-    forecastP.innerText = "Sunny Tomorrow";
+    themeImg.style.filter = "invert(70%)";
+    forecastP.innerText =
+      "Clear skies and plenty of sunshine dominate the day. Warm and pleasant—perfect for outdoor plans!";
   }
 };
 
 export const getDate = () => {
   const date = new Date();
-  const fecha = date.toDateString();
+  const options = {
+    weekday: "long",
+    day: "numeric",
+    month: "long",
+    year: "numeric",
+  };
+  const fecha = new Intl.DateTimeFormat("en-GB", options).format(date);
   const dateP = document.querySelector("#dateP");
   dateP.innerText = fecha;
 };
@@ -36,22 +46,24 @@ export const Navbar = () => `
     <div class="title">
       <p id="dateP"></p>
       <h1>Marina López</h1>
-      <p>Full Stack Developer</p>
+      <p id="position">Full Stack Developer</p>
     </div>
     <div class="forecast">
       <p>Weather forecast</p>
-      <p id = "weather">New Moon Tomorrow</p>
-      <button id="themeBtn">
-        <img src="/moon.png" alt="Moon drawing" id="themeImg">
-      </button>
+      <div class="forecast-information">
+        <p id="weather">With the new moon, expect especially dark skies perfect for stargazing. Cool, calm, and crisp conditions will prevail—bundle up if heading out!</p>
+        <button id="themeBtn">
+          <img src="/moon.png" alt="Moon drawing" id="themeImg">
+        </button>
+      </div>
     </div>
   </div>
   <ul>
     <li>
-        <a href="#" id="homelink">Home</a>
+        <a href="#home" id="homelink">Home</a>
     </li>
     <li>
-        <a href="#" id="projectslink">Projects</a>
+        <a href="#projects" id="projectslink">Projects</a>
     </li>
   </ul>
 </nav>

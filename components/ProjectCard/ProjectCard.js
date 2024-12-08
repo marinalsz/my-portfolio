@@ -15,7 +15,7 @@ export const ProjectCard = (project) => `
     </div>
     <img src=${project.image} alt=${project.title}/>
     <div class="detail">
-        <p>${project.description}</p>
+        <p class="description">${project.description}</p>
         <p class="tech">${project.tech.join(" - ")}</p>
     </div>
 </div>

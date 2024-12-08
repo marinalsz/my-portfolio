@@ -1,15 +1,22 @@
 .projects {
-  min-height: 80vh;
+  width: 100%;
+  height: 100%;
   border: var(--border);
 }
 
-.projects-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+@media only screen and (max-width: 600px) {
+  .projects-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  }
+  figure:nth-child(-n + 3) {
+    border-bottom: var(--border);
+  }
 }
 
-@media (max-width: 770px) {
+@media only screen and (min-width: 600px) {
   .projects-container {
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
   }
 }

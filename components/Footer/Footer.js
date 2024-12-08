@@ -1,8 +1,6 @@
 import "./Footer.css";
 
 export const Footer = () => `
-
-<p>&copy; 2024, Marina López</p>
 <ul class="social-links">
   <li>
     <a href="mailto:marinalsz.dev@gmail.com" target="_blank" rel="noopener"
@@ -20,4 +18,5 @@ export const Footer = () => `
     /></a>
   </li>
 </ul>
+<p>&copy; 2024, Marina López</p>
 `;

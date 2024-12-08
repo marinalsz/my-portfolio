@@ -1,6 +1,9 @@
+header {
+  width: 100%;
+}
+
 nav {
   width: 100%;
-  height: 50vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -12,82 +15,87 @@ nav {
 
 .top-nav {
   width: 100%;
-  height: 70%;
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
   border-bottom: var(--border);
 }
 
 .top-nav > img {
-  width: 25%;
-  height: 100%;
-  object-fit: cover;
-  border-right: var(--border);
+  display: none;
 }
 
 .title {
-  width: 50%;
-  height: 100%;
+  width: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   text-align: center;
   padding: var(--spacing);
-  border-right: var(--border);
+  gap: var(--spacing);
+  border-bottom: var(--border);
 }
 
-.title > p {
-  width: 100%;
-  height: 25%;
+#dateP {
+  font-size: 1rem;
   text-transform: uppercase;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 2rem;
+}
+
+#position {
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-transform: uppercase;
 }
 
 .forecast {
-  background-color: azure;
-  width: 25%;
-  height: 100%;
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
+  padding: var(--spacing);
+  gap: var(--spacing);
 }
 
-.forecast p{
-  background-color: blueviolet;
-  width: 100%;
-  height: 50%;
+.forecast > p {
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.forecast-information {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+  gap: var(--spacing);
 }
 
-.forecast > button {
+.forecast-information > p {
+  text-align: justify;
+}
+
+#themeBtn {
   width: 100%;
-  height: 50%;
   color: inherit;
   background: none;
   border: none;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: aquamarine;
 }
 
 #themeImg {
-  width: 50%;
+  width: 200px;
   height: auto;
+  object-fit: cover;
 }
 
 nav > ul {
   width: 100%;
-  height: 30%;
+  height: 60px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -95,7 +103,7 @@ nav > ul {
 }
 
 nav > ul > li {
-  width: 50%;
+  width: 100%;
   height: 100%;
   display: flex;
   justify-content: center;
