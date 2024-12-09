@@ -17,7 +17,7 @@
   justify-content: space-between;
   align-items: center;
   text-align: center;
-  background-color: brown;
+  gap: var(--spacing);
 }
 
 .project-card > .header > h2 {
@@ -26,7 +26,6 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: white;
 }
 
 .project-card > .header > div {
@@ -36,7 +35,6 @@
   justify-content: center;
   align-items: center;
   gap: var(--spacing);
-  background-color: teal;
 }
 
 .project-card > .header > div > a > img {
@@ -53,14 +51,9 @@
 
 .project-card > img {
   width: 100%;
-  height: 30%;
+  height: 250px;
   border-radius: 0.3rem;
   object-fit: cover;
-}
-
-.project-card > img:hover {
-  transform: scale(1.05);
-  transition: 1s;
 }
 
 .project-card > .detail {
@@ -70,19 +63,19 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: teal;
+  gap: var(--spacing);
 }
 
-.description {
+.project-card > .detail > .description {
   width: 100%;
-  height: 80%;
-  background-color: tan;
+  height: 90%;
   text-align: justify;
 }
 
-.tech {
+.project-card > .detail > .tech {
   width: 100%;
-  height: 20%;
-  color: var(--orange-red);
+  height: 10%;
   text-align: center;
+  color: var(--orange-red);
+  margin-bottom: 10px;
 }

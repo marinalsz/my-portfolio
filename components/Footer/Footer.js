@@ -1,6 +1,7 @@
 import "./Footer.css";
 
 export const Footer = () => `
+<h2>Contact</h2>
 <ul class="social-links">
   <li>
     <a href="mailto:marinalsz.dev@gmail.com" target="_blank" rel="noopener"

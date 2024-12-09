@@ -10,7 +10,6 @@ export const changeTheme = () => {
 };
 
 export const changeText = () => {
-  //const themeBtn = document.querySelector("#themeBtn");
   const themeImg = document.getElementById("themeImg");
   const forecastP = document.querySelector("#weather");
   if (document.body.classList.contains("light")) {
@@ -42,7 +41,6 @@ export const getDate = () => {
 export const Navbar = () => `
 <nav>
   <div class="top-nav">
-    <img src="/logo.png" alt="Logo">
     <div class="title">
       <p id="dateP"></p>
       <h1>Marina López</h1>

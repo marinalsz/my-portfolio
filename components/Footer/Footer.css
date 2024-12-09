@@ -9,6 +9,10 @@ footer {
   border-bottom: var(--border);
 }
 
+footer > h2 {
+  padding: var(--spacing);
+}
+
 .social-links {
   width: 100%;
   display: flex;
@@ -26,9 +30,10 @@ footer {
 }
 
 .social-links img {
-  height: 60px;
-  width: auto;
+  height: 50px;
+  width: 50px;
   object-fit: cover;
+  transition: all 0.3s ease-in-out;
 }
 
 .social-links img:hover {

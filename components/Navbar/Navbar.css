@@ -22,10 +22,6 @@ nav {
   border-bottom: var(--border);
 }
 
-.top-nav > img {
-  display: none;
-}
-
 .title {
   width: 100%;
   display: flex;
@@ -110,6 +106,6 @@ nav > ul > li {
   align-items: center;
 }
 
-nav > ul > li:nth-child(-n + 1) {
+nav > ul > li:nth-child(1) {
   border-right: var(--border);
 }
